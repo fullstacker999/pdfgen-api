@@ -47,7 +47,7 @@ app.use(cors());
 app.get('*', (req, res, next) => {
   next();
 })
-
+// add front
 app.get('/', function(req, res) {
 	res.send('working api');
 });
