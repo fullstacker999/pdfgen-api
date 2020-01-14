@@ -95,7 +95,7 @@ function pdfCreate (req, res, next) {
       res.status(200).json({
         'status': 'success',
         'message': 'PDF Successfully created',
-        'link': process.env.HOST_ADDRESS + '/download/' + filename
+        'link': process.env.HOST_ADDRESS + '/download/result.pdf'
       });
     })
     .catch(err => {
