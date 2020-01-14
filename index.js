@@ -44,6 +44,14 @@ const corsOptions = {
 app.options('*', cors(corsOptions));
 app.use(cors());
 
+app.get('*', (req, res, next) => {
+  next();
+})
+
+app.get('/', function(req, res) {
+	res.send('working api');
+});
+
 app.post('/get-pdf', pdfCreate);
 // define a route to download a file
 app.get('/download/:file(*)', downloadFunc);
