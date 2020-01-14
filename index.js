@@ -54,7 +54,6 @@ app.listen(port, () => {
   console.log('PDF API is listening on port: ' + port);
 });
 
-
 function pdfCreate (req, res, next) {
   const data = req.body;
   const templateHTML = fs.readFileSync('./templates/template.html', 'utf8');
