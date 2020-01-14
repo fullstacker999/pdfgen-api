@@ -50,9 +50,10 @@ app.get('/download/:file(*)', downloadFunc);
 
 const port = app.get('port');
 
-let server = app.listen(port, () => {
+app.listen(port, () => {
   console.log('PDF API is listening on port: ' + port);
 });
+
 
 function pdfCreate (req, res, next) {
   const data = req.body;
