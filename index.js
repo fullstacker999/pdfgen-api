@@ -108,6 +108,7 @@ function downloadFunc (req, res,next) {
   res.download(fileLocation, file);
 }
 
+
 function getFormattedDate (dateString) {
   let dd = dateString.split('T')[0].split('-')[2];
   let mm = parseInt(dateString.split('T')[0].split('-')[1]);
