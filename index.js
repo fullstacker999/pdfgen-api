@@ -72,12 +72,12 @@ function pdfCreate (req, res, next) {
     border: "10mm",
     header: {
         height: "0mm",
-        contents: '<div style="text-align:center;">Test</div>'
+        contents: ''
     },
     footer: {
       height: "15mm",
       contents: {
-        default: '<div style="font-size: 11px;font-family: Justus, "Open Sans";text-align:center;font-style:italic;">test.com</div>'
+        default: '<div style="font-size: 11px;text-align:center;font-style:italic;">thecommunelife.com</div>'
       }
     }
   };
