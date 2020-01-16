@@ -72,7 +72,7 @@ function pdfCreate (req, res, next) {
     border: "10mm",
     header: {
         height: "0mm",
-        contents: ''
+        contents: '<div style="text-align:center;">Test</div>'
     },
     footer: {
       height: "15mm",
