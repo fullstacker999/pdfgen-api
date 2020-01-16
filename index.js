@@ -77,7 +77,7 @@ function pdfCreate (req, res, next) {
     footer: {
       height: "15mm",
       contents: {
-        default: '<div style="font-size: 11px;font-family: Justus, "Open Sans";text-align:center;font-style:italic;">thecommunelife.com</div>'
+        default: '<div style="font-size: 11px;font-family: Justus, "Open Sans";text-align:center;font-style:italic;">test.com</div>'
       }
     }
   };
