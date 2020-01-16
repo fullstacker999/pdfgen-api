@@ -75,11 +75,16 @@ function pdfCreate (req, res, next) {
         contents: '<div style="text-align: center;">Author:</div>'
     },
     footer: {
-      height: "10mm",
-      contents: ''
+      height: "20mm",
+      contents: '<div style="font-size: 11px; font-family: Justus, "Open Sans";text-align:center;font-style:italic">thecommunelife.com</div>'
     }
   };
-
+  // font-size: 11px;
+  // font-family: Justus, 'Open Sans';
+  // font-style: italic;
+  // margin-top: 10px;
+  // padding: 0;
+  // text-align:  center;
   let document = {
     html: templateHTML,
     data: {
