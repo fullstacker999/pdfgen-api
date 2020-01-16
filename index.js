@@ -75,7 +75,7 @@ function pdfCreate (req, res, next) {
         contents: '<div style="text-align: center;">Author:</div>'
     },
     footer: {
-      height: "0mm",
+      height: "10mm",
       contents: ''
     }
   };
